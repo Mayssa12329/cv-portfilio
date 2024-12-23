@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills and Competencies</title>
+    <link rel="stylesheet" href="../css/skills.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <style>
+        .dark-logo {
+            color: white;
+        }
+        .dark-logo span{
+            color:#754ef9
+        }
+    </style>
+        <div class="bg-color">
+            <header class="header">
+                <a href="#" class="logo">Portfolio <span>CV.</span></a>
+                <div class="navbar-wrapper">
+                    <nav class="navbar">
+                        <a href="../index.html">Home</a>
+                        <a href="./aboutme.html">About me</a>
+                        <div class="dropdown">
+                            <a href="#Portfolio" class="active">Resume</a>
+                            <div class="dropdown-menu">
+                                <a href="./education.html" >Education</a>
+                                <a href="./experience.html">Experience</a>
+                                <a href="./skills.html" class="active">Skills</a>
+                                <a href="../pages/quizz.html">quizz</a>
+                            </div>
+                        </div>
+                        <a href="./contact.html">Contact</a>
+                    </nav>
+                    <div id="darkMode-icon">
+                        <i class="bx bx-moon"></i>
+                        <i class="bx bx-sun" style="display: none"></i>
+                    </div>
+                </div>
+            </header>
+    <div class="container">
+        <h1>My <span>skills</span></h1>
+        <div class="tabs">
+            <button class="tab active" onclick="openTab(event, 'languages')">Languages</button>
+            <button class="tab" onclick="openTab(event, 'technical-skills')">Technical Skills</button>
+            <button class="tab" onclick="openTab(event, 'core-competencies')">Core Competencies</button>
+            <button class="tab" onclick="openTab(event, 'areas-of-interest')">Areas of Interest</button>
+        </div>
+        <div id="languages" class="tab-content active">
+            <h2>Languages:</h2>
+            <ul class="language-list">
+                <li><span class="language-name">Arabic</span>: <span class="level">Native/Fluent</span></li>
+                <li><span class="language-name">English</span>: <span class="level">Advanced (B1+)</span></li>
+                <li><span class="language-name">French</span>: <span class="level">Intermediate</span></li>
+            </ul>
+        </div>
+        <div id="technical-skills" class="tab-content">
+            <h2>Technical Skills:</h2>
+            <div class="skills-grid">
+                <div class="skill"><i class='bx bxl-visual-studio'></i> VS Code</div>
+                <div class="skill"><i class='bx bxl-java'></i> Eclipse</div>
+                <div class="skill"><i class='bx bxs-data'></i> PhpMyAdmin</div>
+                <div class="skill"><i class='bx bx-data' ></i> MySQL</div>
+                <div class="skill"><i class='bx bx-chip'></i> Proteus 8</div>
+                <div class="skill"><i class='bx bx-cube'></i> KiCad</div>
+                <div class="skill"><i class='bx bx-cog'></i> Siemens S7</div>
+                <div class="skill"><i class='bx bxs-flask'></i> MATLAB</div>
+                <div class="skill"><i class='bx bxl-postgresql'></i> PostgreSQL</div>
+                <div class="skill"><i class='bx bxl-c-plus-plus'></i> C++</div>
+                <div class="skill"><i class='bx bxl-python'></i> Python</div>
+                <div class="skill"><i class='bx bxl-java'></i> Java</div>
+                <div class="skill"><i class='bx bxl-html5'></i> HTML</div>
+                <div class="skill"><i class='bx bxl-css3'></i> CSS</div>
+                <div class="skill"><i class='bx bxl-javascript'></i> JavaScript</div>
+                <div class="skill"><i class='bx bxl-php'></i> PHP</div>
+                <div class="skill"><i class='bx bxs-file-doc'></i> Microsoft Word</div>
+                <div class="skill"><i class='bx bxl-microsoft'></i> PowerPoint</div>
+            </div>
+        </div>
+        <div id="core-competencies" class="tab-content">
+            <h2>Core Competencies:</h2>
+            <ul class="competencies-list">
+                <li>Advanced Problem-solving</li>
+                <li>Analytical Synthesis Skills</li>
+                <li>Rigorous Approach</li>
+                <li>Effective Team Collaboration</li>
+                <li>Logical Reasoning</li>
+            </ul>
+        </div>
+        <div id="areas-of-interest" class="tab-content">
+            <h2>Areas of Interest:</h2>
+            <ul class="interests-list">
+                <li>🎨 Painting</li>
+                <li>🎵 Music</li>
+                <li>🏐 Volleyball</li>
+                <li>🚴 Cycling</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="../js/skills.js"></script>
+</body>
+
+</html>

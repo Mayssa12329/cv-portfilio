@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Portfolio Website</title>
+    <link rel="stylesheet" href="../css/elec.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <style>* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        border: none;
+        outline: none;
+        scroll-behavior: smooth;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    :root {
+        --bg-color: #fdfdfd;
+        --text-color: #333;
+        --main-color: #754ef9;
+        --shadow-color: rgba(0, 0, 0, .2);
+        --hover-color: #754ef9;
+        --btn-default: #ffffff;
+    }
+    
+    html {
+        font-size: 62.5%;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        background: var(--bg-color);
+        color: var(--text-color);
+    }
+    
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4rem 7%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: var(--bg-color);
+        z-index: 100;
+    }
+    
+    .logo {
+        font-size: 2.5rem;
+        color: var(--main-color);
+        font-weight: 600;
+    }
+    
+    .navbar-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    #darkMode-icon {
+        font-size: 2.4rem;
+        color: var(--main-color);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1rem;
+        margin-bottom: 0; 
+    }
+    
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10px;
+        background-color: transparent;
+    }
+    
+    .navbar a,
+    .dropdown {
+        position: relative;
+        text-decoration: none;
+        color: #754ef9;
+        padding: 10px 15px;
+        transition: all 0.3s ease;
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+    
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    
+    .navbar a::after {
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background: #754ef9;
+        transition: width 0.3s ease, left 0.3s ease;
+        transform: translateX(-50%);
+    }
+    
+    .navbar a:hover::after,
+    .navbar a.active::after,
+    .navbar .dropdown:hover > a::after,
+    .navbar .dropdown:focus-within > a::after {
+        width: 72%;
+        left: 15%;
+        transform: translateX(0);
+    }
+    
+    .navbar a:hover::after,
+    .navbar a.active::after {
+        width: 72%;
+        left: 15%;
+        transform: translateX(0);
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    .animate-fade {
+        animation: fadeIn 1s ease-in-out;
+        opacity: 1;
+    }
+    
+    .fade-in {
+        animation: fadeIn 0.5s ease-in-out;
+    }
+    
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        border: 1px solid #ccc;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 100;
+    }
+    
+    .dropdown-menu a {
+        display: block;
+        padding: 10px;
+        color: black;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+    
+    .dropdown-menu a:hover {
+        background-color: #f1f1f1;
+    }
+    
+    .navbar .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    
+    .resume-navbar {
+        background-color: white;
+        color: black;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .resume-navbar a {
+        color: black;
+        text-decoration: none;
+        font-size: 1.1rem;
+        padding: 0.5rem 1rem;
+        transition: all 0.3s ease;
+    }
+    
+    .resume-navbar a:hover {
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        color: #754ef9;
+    }
+    
+    .resume-navbar a.active {
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        color: #754ef9;
+    }
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%; 
+        left: 1000px; 
+        background-color: white;
+        border: 1px solid #ccc;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 100;
+    }
+    
+    .navbar .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 70%; 
+        left: 11px; 
+        background-color: white;
+        border: 1px solid #ccc;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 100;
+        width: 120px; 
+        margin-top: 10px; 
+    }
+    
+    .dropdown-menu a {
+        display: block;
+        padding: 15px; 
+        color:#754ef9; ;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+    
+    .dropdown-menu a:hover {
+        background-color: #754ef9;
+        color: white;
+    }
+    
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    .navbar a::after {
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background: #754ef9;
+        transition: width 0.3s ease, left 0.3s ease;
+        transform: translateX(-50%);
+    }
+    
+    .navbar a:hover::after,
+    .navbar a.active::after,
+    .navbar .dropdown:hover > a::after,
+    .navbar .dropdown:focus-within > a::after {
+        width: 72%;
+        left: 15%;
+        transform: translateX(0);
+    }
+    .dark-mode {
+        background-color: black;
+        color: white;
+    }
+    
+    .dark-header {
+        background-color: black;
+        color: white;
+    }
+    
+    .dark-navbar {
+        background-color: black;
+        color: white;
+    }
+    
+    .dark-navbar a {
+        color: white;
+    }
+    
+    .dark-navbar a:hover,
+    .dark-navbar a.active {
+        color: white;
+    }
+    
+    .dark-logo {
+        color: white;
+    }
+    .dark-logo span{
+        color:#754ef9
+    }
+    #darkMode-icon {
+        cursor: pointer;
+        font-size: 2.4rem;
+        color: var(--main-color);
+    }
+    
+    #darkMode-icon .bx {
+        display: none;
+    }
+    
+    #darkMode-icon .bx-moon {
+        display: block;
+    }
+    
+    body.dark-mode #darkMode-icon .bx-moon {
+        display: none;
+    }
+    
+    body.dark-mode #darkMode-icon .bx-sun {
+        display: block;
+    }
+    #darkMode-icon .bx {
+        transition: opacity 0.3s ease-in-out;
+    }
+    .dark-mode {
+        background-color: black;
+        color: white;
+    }
+    
+    .dark-header {
+        background-color: black;
+        color: white;
+    }
+    
+    .dark-main-aside {
+        background-color: black;
+        color: white;
+    }
+    
+    .dark-social {
+        background-color: #754ef9;
+        color: white;
+        border-color: white;
+    }
+    
+    .dark-btn {
+        background-color: black;
+        color: #754ef9;
+        border: 2px solid #754ef9;
+        box-shadow: none;
+    }
+    
+    .dark-btn:hover {
+        background-color: #754ef9;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .dark-navbar {
+        background-color: black;
+        color: white;
+    }
+    
+    .dark-navbar a {
+        color: white;
+    }
+    
+    .dark-navbar a:hover,
+    .dark-navbar a.active {
+        color: white;
+    }
+    
+    .dark-logo {
+        color: white;
+    }
+    .dark-logo span {
+        color: #754ef9;
+    }
+    
+    #darkMode-icon {
+        cursor: pointer;
+        font-size: 2.4rem;
+        color: var(--main-color);
+    }
+    
+    #darkMode-icon .bx {
+        display: none;
+    }
+    
+    #darkMode-icon .bx-moon {
+        display: block;
+    }
+    
+    body.dark-mode #darkMode-icon .bx-moon {
+        display: none;
+    }
+    
+    body.dark-mode #darkMode-icon .bx-sun {
+        display: block;
+    }
+
+    #darkMode-icon .bx {
+        transition: opacity 0.3s ease-in-out;
+    }
+    .dropdown-menu a.active {
+        background-color: #754ef9; 
+        color: white; 
+    }
+    
+</style>
+</head>
+
+<body>
+
+    <div class="bg-color">
+        <header class="header">
+            <a href="../accueil.html" class="logo">Portfolio <span>CV.</span></a>
+            <div class="navbar-wrapper">
+                <nav class="navbar">
+                    <a href="../index.html">Home</a>
+                    <a href="../pages/aboutme.html">About me</a>
+                    <div class="dropdown">
+                        <a href="#Portfolio" class="active">Resume</a>
+                        <div class="dropdown-menu">
+                            <a href="../pages/education.html">Education</a>
+                            <a href="../pages/experience.html" class="active">Experiences</a>
+                            <a href="../pages/skills.html">Skills</a>
+                            <a href="../pages/quizz.html">Quizz</a>
+                        </div>
+                    </div>
+                    <a href="../pages/contact.html">Contact</a>
+                </nav>
+                <div id="darkMode-icon">
+                    <i class="bx bx-moon"></i>
+                    <i class="bx bx-sun" style="display: none"></i>
+                </div>
+            </div>
+        </header>
+
+        <section class="internship">
+            <div class="internship-header">
+                <h2>Internship at Society of Engineers for Business (SIAF)</h2>
+                <p><strong>Position:</strong> Summer Intern</p>
+                <p><strong>Duration:</strong> 2 months, 2022</p>
+                <p><strong>Location:</strong> Sfax, Tunisia</p>
+            </div>
+
+            <div class="internship-details">
+                <div class="internship-text">
+                    <h3>Project Overview:</h3>
+                    <p>
+                        During my internship at SIAF, I designed sophisticated electrical systems and measurement solutions for industrial machinery.
+                        I executed precise data collection techniques and developed web applications to display real-time data through an interactive
+                        calendar interface.
+                    </p>
+                    <h3>Key Responsibilities:</h3>
+                    <ul>
+                        <li>Designed electrical systems for industrial machinery</li>
+                        <li>Developed web applications to monitor real-time data</li>
+                        <li>Created interactive dashboards to visualize data in a user-friendly way</li>
+                    </ul>
+                </div>
+
+        </section>
+
+        <script src="../js/elec.js"></script>
+    </div>
+
+</body>
+
+</html>

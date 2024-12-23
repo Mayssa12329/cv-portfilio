@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+    <style>
+    .dark-mode {
+        background-color: black;
+        color: white;
+    }
+    
+    .dark-header {
+        background-color: black;
+        color: white;
+    }
+    .dark-btn {
+        background-color: black;
+        color: #754ef9;
+        border: 2px solid #754ef9;
+        box-shadow: none;
+    }
+    
+    .dark-btn:hover {
+        background-color: #754ef9;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .dark-navbar {
+        background-color: black;
+        color: white;
+    }
+    
+    .dark-navbar a {
+        color: white;
+    }
+    
+    .dark-navbar a:hover,
+    .dark-navbar a.active {
+        color: white;
+    }
+    
+    .dark-logo {
+        color: white;
+    }
+    .dark-logo span{
+        color:#754ef9
+    }
+    #darkMode-icon {
+        cursor: pointer;
+        font-size: 2.4rem;
+        color: var(--main-color);
+    }
+    
+    #darkMode-icon .bx {
+        display: none;
+    }
+    
+    #darkMode-icon .bx-moon {
+        display: block;
+    }
+    
+    body.dark-mode #darkMode-icon .bx-moon {
+        display: none;
+    }
+    
+    body.dark-mode #darkMode-icon .bx-sun {
+        display: block;
+    }
+    #darkMode-icon .bx {
+        transition: opacity 0.3s ease-in-out;
+    }
+    .contact-section .title span {
+        color: #754ef9; 
+    }
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white; 
+        color: #754ef9; 
+        border: 1px solid #ccc;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 100;
+        width: 120px; 
+        margin-top: 0px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    .dropdown-menu a {
+        display: block;
+        padding: 15px;
+        color: #754ef9; 
+        text-decoration: none;
+        white-space: nowrap;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    .dropdown-menu a:hover {
+        background-color: #754ef9; 
+        color: white; 
+    }
+
+</style>
+<div class="bg-color">
+    <header class="header">
+        <a href="../index.html" class="logo">Portfolio <span>CV.</span></a>
+        <div class="navbar-wrapper">
+            <nav class="navbar">
+                <a href="../index.html" >Home</a>
+                <a href="../pages/aboutme.html" >About me</a>
+                <div class="dropdown">
+                    <a href="#Portfolio">Resume</a>
+                    <div class="dropdown-menu">
+                        <a href="../pages/education.html">Education</a>
+                        <a href="../pages/experience.html">Experiences</a>
+                        <a href="../pages/skills.html">Skills</a>
+                        <a href="../pages/quizz.html">quizz</a>
+                    </div>
+                </div>
+                <a href="../pages/contact.html" class="active">Contact</a>
+            </nav>
+            <div id="darkMode-icon">
+                <i class="bx bx-moon"></i>
+                <i class="bx bx-sun" style="display: none"></i>
+            </div>
+        </div>
+    </header>
+</div>
+    <section class="contact-section">
+        <div class="contact-bg">
+            <div class="overlay"></div>
+            <h1 class="title">Contact <span>Us</span></h1>
+        </div>
+        <div class="contact-content">
+            <div class="info-section">
+                <h2>Let's Stay in Touch</h2>
+                <p>We are delighted to collaborate with you. Here is our contact information:</p>
+                <ul class="info-list">
+                    <li><strong>Email:</strong> maysabenamar144@gmail.com</li>
+                    <li><strong>Phone:</strong> +216 29 037 656 </li>
+                    <li><strong>Address:</strong>  L’Ain street km 6,5 ,3042, Sfax, Tunisia</li>
+                </ul>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/maissa.benamar.9/"><i class="bx bxl-facebook"></i></a>
+                    <a href="https://www.instagram.com/maissa.benamar.9/"><i class="bx bxl-instagram-alt"></i></a>
+                    <a href="https://github.com/Mayssa12329"><i class="bx bxl-github"></i></a>
+                    <a href="https://www.linkedin.com/in/maissa-ben-amar-930a08255/"><i class="bx bxl-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="form-section">
+                <h2>Write to Us</h2>
+                <form action="#" method="post" class="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn-submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="../js/contact.js"></script>
+</body>
+</html>

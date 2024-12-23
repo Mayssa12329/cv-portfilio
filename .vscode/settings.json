@@ -1,0 +1,7 @@
+{
+    "svn.ignoreMissingSvnWarning": true,
+    "launch": {
+        "configurations": [],
+        "compounds": []
+    }
+}

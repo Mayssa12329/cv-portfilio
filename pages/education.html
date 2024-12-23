@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Portfolio Website</title>
+    <link rel="stylesheet" href="../css/education.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <style>
+    .dark-logo {
+        color: white;
+    }
+    .dark-logo span{
+        color:#754ef9
+    }
+    </style>
+    <div class="bg-color">
+        <header class="header">
+            <a href="#" class="logo">Portfolio <span>CV.</span></a>
+            <div class="navbar-wrapper">
+                <nav class="navbar">
+                    <a href="../index.html">Home</a>
+                    <a href="./aboutme.html">About me</a>
+                    <div class="dropdown">
+                        <a href="#Portfolio" class="active">Resume</a>
+                        <div class="dropdown-menu">
+                            <a href="./education.html" class="active">Education</a>
+                            <a href="./experience.html">Experience</a>
+                            <a href="./skills.html">Skills</a>
+                            <a href="../pages/quizz.html">quizz</a>
+                        </div>
+                    </div>
+                    <a href="./contact.html">Contact</a>
+                </nav>
+                <div id="darkMode-icon">
+                    <i class="bx bx-moon"></i>
+                    <i class="bx bx-sun" style="display: none"></i>
+                </div>
+            </div>
+        </header>
+        <div class="education-timeline">
+            <h1><span>My</span> Education</h1>
+            <div class="timeline-container">
+                <div class="timeline-column">
+                    <div class="timeline-item" onclick="document.getElementById('modal1').style.display='block'">
+                        <span class="timeline-date">2024-2025 📅</span>
+                        <h3>Institution of International Technology</h3>
+                        <p>First year of an engineering degree in computer engineering.</p>
+                    </div>
+                    <div id="modal1" class="modal">
+                        <div class="modal-content">
+                            <span class="close-btn" onclick="document.getElementById('modal1').style.display='none'">&times;</span>
+                            <center>
+                            <h2><i>Computer Engineering</i></h2>
+                            <img src="../images/institut.jpg" alt="Institution of International Technology">
+                            <p>I am currently pursuing an engineering program to earn my degree and am in my first year of computer engineering studies.</p>
+                        </center>
+                        </div>
+                    </div>
+                    <div class="timeline-item" onclick="document.getElementById('modal2').style.display='block'">
+                        <span class="timeline-date">2023-2024 📅</span>
+                        <h3>National School of Electronics and Telecommunications of Sfax</h3>
+                        <p>1st year master’s degree in industrial automation and IT.</p>
+                    </div>
+                    <div id="modal2" class="modal">
+                        <div class="modal-content">
+                            <span class="close-btn" onclick="document.getElementById('modal2').style.display='none'">&times;</span>
+                            <center>
+                            <h2>Master's degree in Industrial Computing</h2>
+                            <img src="../images/master.jpg" alt="National School of Electronics and Telecommunications of Sfax" width="40%" height="50%">
+                            <p>I only completed the first year of a Master's degree in Industrial Computer Science at the National School of Electronics and Telecommunications. And I passed the year successfully.</p>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-column">
+                    <div class="timeline-item" onclick="document.getElementById('modal3').style.display='block'">
+                        <span class="timeline-date">2020-2023 📅</span>
+                        <h3>Faculty of Science, Sfax, Tunisia</h3>
+                        <p>Professional Bachelor’s Degree in Advanced Automation and Industrial IT Technician.</p>
+                    </div>
+                    <div id="modal3" class="modal">
+                        <div class="modal-content">
+                            <span class="close-btn" onclick="document.getElementById('modal3').style.display='none'">&times;</span>
+                            <center>
+                            <h2>Degree in Industrial Computing and Automation</h2>
+                            <img src="../images/diploma.jpg" alt="Faculty of Science, Sfax, Tunisia">
+                            <p>I obtained a Bachelor's degree in Industrial Computing and Automation with honors.</p>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="timeline-item" onclick="document.getElementById('modal4').style.display='block'">
+                        <span class="timeline-date">2019-2020 📅</span>
+                        <h3>9th of April 1938 High School, Sfax, Tunisia</h3>
+                        <p>Technical Baccalaureate.</p>
+                    </div>
+                    <div id="modal4" class="modal">
+                        <div class="modal-content">
+                            <span class="close-btn" onclick="document.getElementById('modal4').style.display='none'">&times;</span>
+                            <center>
+                            <h2>Technical Baccalaureate Degree</h2>
+                            <img src="../images/high school diploma.jpg" alt="9th of April 1938 High School, Sfax, Tunisia">
+                            <p>I obtained the Baccalaureate diploma with a passing grade.</p>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/education.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz Page</title>
+<link rel="stylesheet" href="../css/cquizz.css">
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html" class="logo">Portfolio <span>CV.</span></a>
+        <div class="navbar-wrapper">
+            <nav class="navbar">
+                <a href="../index.html" >Home</a>
+                <a href="../pages/aboutme.html">About me</a>
+                <div class="dropdown">
+                    <a href="#Portfolio" class="active">Resume</a>
+                    <div class="dropdown-menu">
+                        <a href="./pages/education.html">Education</a>
+                        <a href="../pages/experience.html">Experience</a>
+                        <a href="../pages/skills.html">Skills</a>
+                        <a href="../pages/quizz.html" class="active">quizz</a>
+                    </div>
+                </div>
+                <a href="../pages/contact.html">Contact</a>
+            </nav>
+            <div id="darkMode-icon">
+                <i class="bx bx-moon"></i>
+                <i class="bx bx-sun" style="display: none"></i>
+            </div>
+        </div>
+    </header>
+<div class="container">
+  <h1>General <span>Knowledge Quiz</span></h1>
+  <form id="quiz-form">
+    <ol>
+      <li>
+        <p>Question 1: What is the capital of France?</p>
+        <input type="radio" id="q1a" name="q1" value="A">
+        <label for="q1a">A) Berlin</label><br>
+        <input type="radio" id="q1b" name="q1" value="B">
+        <label for="q1b">B) Madrid</label><br>
+        <input type="radio" id="q1c" name="q1" value="C">
+        <label for="q1c">C) Paris</label><br>
+        <input type="radio" id="q1d" name="q1" value="D">
+        <label for="q1d">D) Rome</label>
+      </li>
+      <li>
+        <p>Question 2: What is the largest planet in our solar system?</p>
+        <input type="radio" id="q2a" name="q2" value="A">
+        <label for="q2a">A) Earth</label><br>
+        <input type="radio" id="q2b" name="q2" value="B">
+        <label for="q2b">B) Mars</label><br>
+        <input type="radio" id="q2c" name="q2" value="C">
+        <label for="q2c">C) Jupiter</label><br>
+        <input type="radio" id="q2d" name="q2" value="D">
+        <label for="q2d">D) Saturn</label>
+      </li>
+      <li>
+        <p>Question 3:  Who was the first President of the United States?</p>
+        <input type="radio" id="q3a" name="q3" value="A">
+        <label for="q3a">A) Napoleon Bonaparte</label><br>
+        <input type="radio" id="q3b" name="q3" value="B">
+        <label for="q3b">B) George Washington</label><br>
+        <input type="radio" id="q3c" name="q3" value="C">
+        <label for="q3c">C) John Adams</label><br>
+        <input type="radio" id="q3d" name="q3" value="D">
+        <label for="q3d">D) Thomas Jefferson</label>
+      </li>
+      <li>
+        <p>Question 4:   Who is known as the 'Father of the Nation' in India?</p>
+        <input type="radio" id="q4a" name="q4" value="A">
+        <label for="q4a">A) Jawaharlal Nehru</label><br>
+        <input type="radio" id="q4b" name="q4" value="B">
+        <label for="q4b">B) Subhas Chandra Bose</label><br>
+        <input type="radio" id="q4c" name="q4" value="C">
+        <label for="q4c">C) Mahatma Gandhi</label><br>
+        <input type="radio" id="q4d" name="q4" value="D">
+        <label for="q4d">D) Santa Claus</label>
+      </li>
+      <li>
+        <p>Question 5: What is the title of the first Harry Potter book?</p>
+        <input type="radio" id="q5a" name="q5" value="A">
+        <label for="q5a">A) Harry Potter and the Sorcerer's Stone</label><br>
+        <input type="radio" id="q5b" name="q5" value="B">
+        <label for="q5b">B) Harry Potter and the Chamber of Secrets</label><br>
+        <input type="radio" id="q5c" name="q5" value="C">
+        <label for="q5c">C) Harry Potter and Dinosaur's Egg</label><br>
+        <input type="radio" id="q5d" name="q5" value="D">
+        <label for="q5d">D) Harry Potter and the Philosopher's Stone</label>
+      </li>
+      <li>
+        <p>Question 6: What is the main gas found in the air we breathe?</p>
+        <input type="radio" id="q6a" name="q6" value="A">
+        <label for="q6a">A) Argon</label><br>
+        <input type="radio" id="q6b" name="q6" value="B">
+        <label for="q6b">B) Oxygen</label><br>
+        <input type="radio" id="q6c" name="q6" value="C">
+        <label for="q6c">C) Helium</label><br>
+        <input type="radio" id="q6d" name="q6" value="D">
+        <label for="q6d">D) Nitrogen</label>
+      </li>
+      <li>
+        <p>Question 7:  Which animal is known for having a pouch to carry its young?</p>
+        <input type="radio" id="q7a" name="q7" value="A">
+        <label for="q7a">A) Kangaroo</label><br>
+        <input type="radio" id="q7b" name="q7" value="B">
+        <label for="q7b">B) Dog</label><br>
+        <input type="radio" id="q7c" name="q7" value="C">
+        <label for="q7c">C) Killer Whale</label><br>
+        <input type="radio" id="q7d" name="q7" value="D">
+        <label for="q7d">D) Penguin</label>
+      </li>
+      <li>
+        <p>Question 8: Which sport uses the terms 'spare' and 'strike'?</p>
+        <input type="radio" id="q8a" name="q8" value="A">
+        <label for="q8a">A) Cricket</label><br>
+        <input type="radio" id="q8b" name="q8" value="B">
+        <label for="q8b">B) Bowling</label><br>
+        <input type="radio" id="q8c" name="q8" value="C">
+        <label for="q8c">C) Baseball</label><br>
+        <input type="radio" id="q8d" name="q8" value="D">
+        <label for="q8d">D) Chess</label>
+      </li>
+      <li>
+        <p>Question 9: What is the capital city of Canada?</p>
+        <input type="radio" id="q9a" name="q9" value="A">
+        <label for="q9a">A) Ottawa </label><br>
+        <input type="radio" id="q9b" name="q9" value="B">
+        <label for="q9b">B) Toronto</label><br>
+        <input type="radio" id="q9c" name="q9" value="C">
+        <label for="q9c">C) Vancouver</label><br>
+        <input type="radio" id="q9d" name="q9" value="D">
+        <label for="q9d">D) Sydney</label>
+      </li>
+      <li>
+        <p>Question 10: Who was the first man to walk on the moon?</p>
+        <input type="radio" id="q10a" name="q10" value="A">
+        <label for="q10a">A) Neil Armstrong</label><br>
+        <input type="radio" id="q10b" name="q10" value="B">
+        <label for="q10b">B) Buzz Aldrin</label><br>
+        <input type="radio" id="q10c" name="q10" value="C">
+        <label for="q10c">C) Yuri Gagarin</label><br>
+        <input type="radio" id="q10d" name="q10" value="D">
+        <label for="q10d">D) Michael Jackson</label>
+      </li>
+      <li>
+        <p>Question 11: Who was the first woman to win a Nobel Prize?</p>
+        <input type="radio" id="q11a" name="q11" value="A">
+        <label for="q11a">A) Wonder Woman</label><br>
+        <input type="radio" id="q11b" name="q11" value="B">
+        <label for="q11b">B) Rosalind Franklin</label><br>
+        <input type="radio" id="q11c" name="q11" value="C">
+        <label for="q11c">C) Bertha von Suttner</label><br>
+        <input type="radio" id="q11d" name="q11" value="D">
+        <label for="q11d">D) Marie curie</label>
+      </li>
+      <li>
+        <p>Question 12: WAccording to the Old Testament, how many days did it take God to create the world?</p>
+        <input type="radio" id="q12a" name="q12" value="A">
+        <label for="q12a">A) 1</label><br>
+        <input type="radio" id="q12b" name="q12" value="B">
+        <label for="q12b">B) 6</label><br>
+        <input type="radio" id="q12c" name="q12" value="C">
+        <label for="q12c">C) 7</label><br>
+        <input type="radio" id="q12d" name="q2" value="D">
+        <label for="q12d">D) 11</label>
+      </li>
+      <li>
+        <p>Question 13: How many planets are there in the solar system?</p>
+        <input type="radio" id="q13a" name="q13" value="A">
+        <label for="q13a">A) 2</label><br>
+        <input type="radio" id="q13b" name="q13" value="B">
+        <label for="q13b">B) 8</label><br>
+        <input type="radio" id="q13c" name="q13" value="C">
+        <label for="q13c">C) 9</label><br>
+        <input type="radio" id="q13d" name="q13" value="D">
+        <label for="q13d">D) 11</label>
+      </li>
+      <li>
+        <p>Question 14: The Koran is the holy book of which religion?</p>
+        <input type="radio" id="q14a" name="q14" value="A">
+        <label for="q14a">A) Christianity</label><br>
+        <input type="radio" id="q14b" name="q14" value="B">
+        <label for="q14b">B) Hinduism</label><br>
+        <input type="radio" id="q14c" name="q14" value="C">
+        <label for="q14c">C) Judaism</label><br>
+        <input type="radio" id="q14d" name="q14" value="D">
+        <label for="q14d">D) Islam</label>
+      </li>
+      <li>
+        <p>Question 15: Which planet is known as the "Red Planet"?</p>
+        <input type="radio" id="q15a" name="q15" value="A">
+        <label for="q15a">A) Venus</label><br>
+        <input type="radio" id="q15b" name="q15" value="B">
+        <label for="q15b">B) Saturn</label><br>
+        <input type="radio" id="q15c" name="q15" value="C">
+        <label for="q15c">C)Mercury</label><br>
+        <input type="radio" id="q15d" name="q15" value="D">
+        <label for="q15d">D) MARS</label>
+      </li>
+      
+    </ol>
+    <button type="button" onclick="submitQuiz()">Submit</button>
+  </form>
+  <div id="results"></div>
+</div>
+<script src="../js/cquizz.js"></script>
+</body>
+</html>

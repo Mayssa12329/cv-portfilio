@@ -1,0 +1,402 @@
+
+.main-container {
+    width: 80%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 25px rgba(117, 78, 249, 0.7);
+    border-radius: 10px;
+    position: relative;
+    margin-top: 200px;
+}
+a[href="#informations"] {
+    color: #754ef9;
+}
+#informations span {
+    color: #754ef9; 
+}
+#informations h2{
+    margin-left: 25px;
+}
+h1 {
+    color: #754ef9;
+    font-size: 2.5em;
+    margin: 3%;
+}
+
+p {
+    line-height: 1.5;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    margin: 3%;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    border: 5px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    z-index: 1; 
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    width: 130%;
+    z-index: 2; 
+    position:absolute;
+    top: 55%; 
+    left: 67%;
+    transform: translate(-50%, -50%);
+    margin: -430px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    width: 60%;
+    box-shadow: 0px 4px 25px rgba(117, 78, 249, 0.7);
+    text-align: center;
+    margin-top: 0;
+}
+.card-left{
+    margin-left: 30%;
+}
+.card-right{
+    margin-left: -30%;
+}
+.card-left, .card-right {
+    width: 30%; 
+}
+
+button {
+    background-color: white;
+    color: #754ef9;
+    border: 2px solid #754ef9;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, border 0.3s ease; 
+    z-index: 10;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #754ef9;
+    color: #333;
+    transform: scale(1.1);
+    border: 2px solid #754ef9;
+    border-radius: 5px; 
+}
+
+
+
+.quiz-info p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+a {
+    color: #754ef9;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+    font-size: 15px;
+}
+.form-container h1{
+    color: #754ef9;
+}
+
+.form-container input, .form-container textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.start-quiz-container {
+    text-align: center; 
+    margin-top: 90px; 
+    text-decoration: none;
+}
+
+.start-quiz-button {
+    background-color:white;
+    color: #754ef9; 
+    border: 2px solid #754ef9; 
+    padding: 10px 30px;
+    font-size: 3em;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+    width: 180%;
+    font-weight: bold;
+    margin-top: 120px;
+}
+
+.start-quiz-button:hover {
+    background-color: #754ef9; 
+    color: #333;
+    border: 2px solid #754ef9; 
+    transform: scale(1.1); 
+    text-decoration: none;
+
+}
+.A{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    margin: 3%;
+}
+strong{
+    font-size: 20px;
+}
+.container {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.comment {
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 18px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    width: 100%;
+}
+
+.comment-time {
+    font-size: 14px;
+    color: #999;
+    margin-left: 500px; 
+}
+.comment strong {
+    font-size: 18px;
+    color: #333;  
+    display: block; 
+    margin-bottom: 5px; 
+    margin-left: 250px;
+}
+
+.comment span {
+    display: inline; 
+    margin-right: 10px;
+}
+
+.comment p {
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+body.dark-mode .dark-header {
+    background-color: black; 
+}
+
+body.dark-mode .dark-navbar {
+    background-color: black;
+}
+
+body.dark-mode .dark-navbar a,
+body.dark-mode .dark-logo,
+body.dark-mode .dark-logo span,
+body.dark-mode #darkMode-icon {
+    color: white;
+    text-decoration: none;
+}
+
+body.dark-mode .dark-navbar a:hover,
+body.dark-mode .dark-navbar a.active {
+    color: #754ef9;
+    background-color: transparent; 
+    text-decoration: none;
+}
+
+body.dark-mode #darkMode-icon {
+    font-size: 2.4rem;
+    color: #754ef9; 
+}
+
+
+.dark-navbar {
+    background-color: black;
+    color: white;
+}
+
+.dark-navbar a {
+    color: white;
+}
+
+.dark-navbar a:hover,
+.dark-navbar a.active {
+    color: white;
+}
+
+
+#darkMode-icon {
+    cursor: pointer;
+    font-size: 2.4rem;
+    color: var(--main-color);
+}
+
+#darkMode-icon .bx {
+    display: none;
+}
+
+#darkMode-icon .bx-moon {
+    display: block;
+}
+
+body.dark-mode #darkMode-icon .bx-moon {
+    display: none;
+}
+
+body.dark-mode #darkMode-icon .bx-sun {
+    display: block;
+}
+#darkMode-icon .bx {
+    transition: opacity 0.3s ease-in-out;
+}
+body.dark-mode,
+body.dark-mode .main-container,
+body.dark-mode .container,
+body.dark-mode .form-container,
+body.dark-mode .comment,
+body.dark-mode .cards-container .card {
+    background-color: black;
+    color: white;
+}
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+    color: #754ef9;
+}
+
+body.dark-mode a {
+    color: #754ef9;
+}
+
+body.dark-mode a:hover {
+    text-decoration: underline;
+}
+
+body.dark-mode button,
+body.dark-mode .start-quiz-button {
+    background-color: white;     
+    color: #754ef9;               
+    border: 2px solid #754ef9;
+}
+
+body.dark-mode button:hover,
+body.dark-mode .start-quiz-button:hover {
+    background-color: #754ef9;
+    color: #333;
+    border: 2px solid #754ef9;
+    text-decoration: none; 
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+    background-color: black;
+    color: white;
+    border: 1px solid #754ef9;
+}
+body.dark-mode .image-container img,
+body.dark-mode .comment,
+body.dark-mode .card {
+    box-shadow: 0px 4px 25px rgba(117, 78, 249, 0.7);
+}
+body.dark-mode #darkMode-icon {
+    color: #754ef9;
+}
+
+
+body.dark-mode strong {
+    color: white;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 70%; 
+    left: 11px; 
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    width: 120px; 
+    margin-top: 10px; 
+}
+
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    color: #754ef9;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+    background-color: #754ef9; 
+    color: white; 
+}
+
+body.dark-mode .dropdown-menu {
+    background-color: white; 
+    color: #754ef9;
+}
+
+body.dark-mode .dropdown-menu a {
+    color: #754ef9; 
+}
+
+body.dark-mode .dropdown-menu a:hover {
+    background-color: #754ef9;
+    color: white;
+}
+
+body.dark-mode .dropdown-menu a.active {
+    background-color: #754ef9;
+    color: white; 
+}
+.navbar a.active {
+    background-color: #754ef9;
+    color: white;
+}

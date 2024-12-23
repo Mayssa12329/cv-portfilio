@@ -1,0 +1,272 @@
+
+.internship {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center; 
+    padding: 40px;
+    max-width: 1200px;
+    margin-top: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
+}
+.internship-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.internship-header h2 {
+    font-size: 2.9rem;
+    color: #754ef9;
+    margin-bottom: 10px;
+}
+
+.internship-header p {
+    font-size: 1.9rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+.internship-text {
+    width: 60%;
+    margin-right: 20px;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.internship-text h3 {
+    color: #754ef9;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    
+}
+.internship-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.internship-text p,
+.internship-text ul {
+    font-size: 2.2rem;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .internship-details {
+        display: block;
+    }
+
+    .internship-text {
+        width: 100%;
+        margin-right: 0;
+    }
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.dark-header {
+    background-color: black;
+    color: white;
+}
+
+.dark-navbar {
+    background-color: black;
+    color: white;
+}
+
+.dark-navbar a {
+    color: white;
+}
+
+.dark-navbar a:hover,
+.dark-navbar a.active {
+    color: white;
+}
+
+.dark-logo {
+    color: white;
+}
+
+.dark-logo span {
+    color: #754ef9;
+}
+
+#darkMode-icon {
+    cursor: pointer;
+    font-size: 2.4rem;
+    color: var(--main-color);
+}
+
+#darkMode-icon .bx {
+    display: none;
+}
+
+#darkMode-icon .bx-moon {
+    display: block;
+}
+
+body.dark-mode #darkMode-icon .bx-moon {
+    display: none;
+}
+
+body.dark-mode #darkMode-icon .bx-sun {
+    display: block;
+}
+
+.dark-scroll-icon {
+    color: #754ef9;
+}
+
+#darkMode-icon .bx {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.internship-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    margin-top: 220px;
+}
+
+.internship-header h2 {
+    font-size: 2.9rem;
+    color: #754ef9;
+    margin-bottom: 10px;
+}
+
+.internship-header p {
+    font-size: 1.9rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+body.dark-mode .internship-header {
+    color: white;
+}
+
+body.dark-mode .dropdown-menu a {
+    color: #754ef9;
+}
+
+body.dark-mode .dropdown-menu a:hover {
+    background-color: #754ef9;
+    color: white;
+}
+
+body.dark-mode .internship-header p {
+    color: white; 
+}
+.dropdown-menu a.active {
+    background-color: #754ef9; 
+    color: white; 
+}
+}
+
+body.dark-mode .internship-header {
+    color: white; 
+}
+
+body.dark-mode .internship-header h2 {
+    color: #754ef9; 
+}
+
+body.dark-mode .internship-header p {
+    color: white;
+}
+
+body.dark-mode .navbar a.active {
+    color: white; 
+}
+
+
+.dark-logo {
+    color: white;
+}
+
+.dark-logo span {
+    color: #754ef9;
+}
+
+#darkMode-icon {
+    cursor: pointer;
+    font-size: 2.4rem;
+    color: var(--main-color);
+}
+
+#darkMode-icon .bx {
+    display: none;
+}
+
+#darkMode-icon .bx-moon {
+    display: block;
+}
+
+body.dark-mode #darkMode-icon .bx-moon {
+    display: none;
+}
+
+body.dark-mode #darkMode-icon .bx-sun {
+    display: block;
+}
+
+.dark-scroll-icon {
+    color: #754ef9;
+}
+
+#darkMode-icon .bx {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.internship-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.internship-header h2 {
+    font-size: 2.9rem;
+    color: #754ef9;
+    margin-bottom: 10px;
+}
+
+.internship-header p {
+    font-size: 1.9rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+body.dark-mode .internship-header {
+    color: white;
+}
+
+body.dark-mode .dropdown-menu a {
+    color: #754ef9;
+}
+
+body.dark-mode .dropdown-menu a:hover {
+    background-color: #754ef9;
+    color: white;
+}
+
+body.dark-mode .internship-header p {
+    color: white; 
+}
+.dropdown-menu a.active {
+    background-color: #754ef9; 
+    color: #754ef9; 
+}
